@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">PORTFOLIO</a>
+
+        <div class="nav-right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-main" id="home">
+        <h1>Hi, I'm Ray</h1>
+        <div class="typing-wrapper">
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor"></span>
+        </div>
+        <p>
+            Halo! Kenalin, saya Ray — fokus di Web Development,
+            Data Analyst, dan Machine Learning. Saya suka membangun
+            aplikasi web, mengolah data jadi insight, dan belajar
+            membuat model prediksi.
+        </p>
+
+        <a href="cv/RayCV.pdf" download class="btn-cv">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3" />
+            </svg>
+            Download CV
+        </a>
+
+        <div class="hero-photo-wrapper" id="heroPhoto">
+            <div class="hero-photo">
+                <img src="image/MySelf.jpeg" alt="Foto Ray">
+            </div>
+
+            <div class="photo-badges">
+                <div class="photo-badge">
+                    <span class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="9" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3" />
+                        </svg>
+                    </span>
+                    2+ Years of Experience
+                </div>
+                <div class="photo-badge">
+                    <span class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 6l-6 6 6 6M16 6l6 6-6 6M14 4l-4 16" />
+                        </svg>
+                    </span>
+                    Python Main Languange
+                </div>
+                <div class="photo-badge">
+                    <span class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="13" rx="2" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 21h8M12 17v4" />
+                        </svg>
+                    </span>
+                    Machine Learning
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-about" id="about">
+
+        <div class="about-photo">
+            <img src="image/MySelf.jpeg" alt="Foto Ray">
+        </div>
+
+        <div class="about-columns">
+            <div class="about-col">
+                <h3 class="about-subtitle">Who Am I</h3>
+                <p>
+                    Saya mahasiswa yang sedang menekuni Web Development,
+                    Data Analyst, dan Machine Learning. Saya percaya belajar
+                    terbaik adalah dengan membangun project nyata, bukan cuma
+                    menonton tutorial.
+                </p>
+            </div>
+            <div class="about-col">
+                <h3 class="about-subtitle">My Approach</h3>
+                <p>
+                    Saya percaya cara terbaik belajar adalah dengan membangun.
+                    Setiap project saya kerjakan sampai selesai, sekecil apa pun,
+                    karena dari situ saya paham konsepnya secara nyata bukan cuma teori
+                </p>
+            </div>
+        </div>
+
+        <div class="about-details">
+            <h3 class="about-subtitle">Personal Details</h3>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Name</span>
+                    <span class="detail-value">Ray Ricardo Simbolon</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Place of Birth</span>
+                    <span class="detail-value">Bontang, Indonesia</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Phone</span>
+                    <span class="detail-value">+62 823-9344-5243</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">GPA</span>
+                    <span class="detail-value">3.69</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value">rcrdoo10@gmail.com</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">Universitas Sanata Dharma</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="section-label">DISCOVER</p>
+        <h2>About Me</h2>
+
+    </section>
+
+    <section class="section-marquee">
+        <div class="marquee-track">
+            <span>Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;</span>
+            <span>Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;Hello I'm Ray&nbsp;</span>
+        </div>
+
+        <div class="marquee-track marquee-track-2">
+            <span>Web Development&nbsp;&nbsp;·&nbsp;&nbsp;Data Analyst&nbsp;&nbsp;·&nbsp;&nbsp;Machine Learning&nbsp;&nbsp;·&nbsp;&nbsp;Web Development&nbsp;&nbsp;·&nbsp;&nbsp;Data Analyst&nbsp;&nbsp;·&nbsp;&nbsp;Machine Learning&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+            <span>Web Development&nbsp;&nbsp;·&nbsp;&nbsp;Data Analyst&nbsp;&nbsp;·&nbsp;&nbsp;Machine Learning&nbsp;&nbsp;·&nbsp;&nbsp;Web Development&nbsp;&nbsp;·&nbsp;&nbsp;Data Analyst&nbsp;&nbsp;·&nbsp;&nbsp;Machine Learning&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+        </div>
+    </section>
+
+    <section class="section-projects" id="projects">
+
+        <p class="section-label">EXPLORE</p>
+        <h2>My Work</h2>
+
+        <div class="tab-toggle">
+            <button class="tab-btn active" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="tech">Tech Stack</button>
+        </div>
+
+        <div class="tab-content active" id="tab-projects">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Web App</h3>
+                    <p>Membangun aplikasi web modern menggunakan HTML, CSS, dan JavaScript.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Data Analysis</h3>
+                    <p>Mengolah data menjadi insight menggunakan Python & Pandas.</p>
+                </div>
+                <div class="project-card">
+                    <h3>ML Model</h3>
+                    <p>Membuat model prediksi sederhana dengan scikit-learn.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-tech">
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-html5-plain"></i></div>
+                    <h3>HTML</h3>
+                    <p>Markup</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-css3-plain"></i></div>
+                    <h3>CSS</h3>
+                    <p>Styling</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-javascript-plain"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Interaktif</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-python-plain"></i></div>
+                    <h3>Python</h3>
+                    <p>Backend & Data</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-java-plain"></i></div>
+                    <h3>Java</h3>
+                    <p>OOP Language</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-r-plain"></i></div>
+                    <h3>R</h3>
+                    <p>Statistics</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-php-plain"></i></div>
+                    <h3>PHP</h3>
+                    <p>Backend</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-mysql-plain"></i></div>
+                    <h3>SQL</h3>
+                    <p>Database</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-pandas-plain"></i></div>
+                    <h3>Pandas</h3>
+                    <p>Data Analysis</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-scikitlearn-plain"></i></div>
+                    <h3>Scikit-learn</h3>
+                    <p>Machine Learning</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-git-plain"></i></div>
+                    <h3>Git</h3>
+                    <p>Version Control</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="devicon-github-original"></i></div>
+                    <h3>GitHub</h3>
+                    <p>Collaboration</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-contact" id="contact">
+
+        <p class="section-label">GET IN TOUCH</p>
+        <h2>Contact Me</h2>
+
+        <p class="contact-desc">
+            Punya project, kolaborasi, atau sekadar mau ngobrol?
+            Silakan hubungi saya lewat salah satu channel di bawah.
+        </p>
+
+        <div class="contact-grid">
+
+            <a href="mailto:rcrdoo10@gmail.com" class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2 7l10 7 10-7" />
+                    </svg>
+                </div>
+                <h3>Email</h3>
+                <p>rcrdoo10@gmail.com</p>
+            </a>
+
+            <a href="https://wa.me/6282393445243" target="_blank" class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                    </svg>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>+62 823-9344-5243</p>
+            </a>
+
+            <a href="https://github.com/rcrdoo10?tab=repositories" target="_blank" class="contact-card">
+                <div class="contact-icon">
+                    <i class="devicon-github-original"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>github.com/rcrdoo10</p>
+            </a>
+
+            <a href="https://tiktok.com/@rayssmbln" target="_blank" class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="none">
+                        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                    </svg>
+                </div>
+                <h3>TikTok</h3>
+                <p>@rayssmbln</p>
+            </a>
+
+            <a href="https://instagram.com/ray.smbln" target="_blank" class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                    </svg>
+                </div>
+                <h3>Instagram</h3>
+                <p>@ray.smbln</p>
+            </a>
+
+            <a href="https://sociabuzz.com/raysmbln" target="_blank" class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+                    </svg>
+                </div>
+                <h3>Sociabuzz</h3>
+                <p>sociabuzz.com/raysmbln</p>
+            </a>
+
+        </div>
+
+    </section>
+
+    <div class="page-loading" id="loadingPage">
+        <h5>// INITIALIZING</h5>
+        <h1>LOADING</h1>
+        <div class="progress">
+            <div class="progress-bar" id="bar"></div>
+        </div>
+        <div class="percent" id="percent">0%</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
